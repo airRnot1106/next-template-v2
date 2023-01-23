@@ -1,7 +1,7 @@
 export default function Home() {
   return (
-    <main>
-      <h1>Next-Template-V2</h1>
+    <main className="p-5">
+      <h1 className="text-5xl font-bold">Next-Template-V2</h1>
     </main>
   );
 }
