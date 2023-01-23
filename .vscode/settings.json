@@ -33,5 +33,14 @@
   // VSCodeデフォルトのLintを無効にする（各Lintのルールで統一する際に設定）
   "css.validate": false,
   "javascript.format.enable": false,
-  "typescript.format.enable": false
+  "typescript.format.enable": false,
+
+  // スペルチェック
+  "cSpell.words": [
+    "classname",
+    "daisyui",
+    "nonconstructor",
+    "Parens",
+    "tailwindcss"
+  ]
 }
