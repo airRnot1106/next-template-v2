@@ -1,4 +1,6 @@
-import './globals.css'
+import { RecoilRoot } from 'recoil';
+
+import '@/app/globals.css';
 
 export default function RootLayout({
   children,
@@ -12,7 +14,9 @@ export default function RootLayout({
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-      <body>{children}</body>
+      <body>
+        <RecoilRoot>{children}</RecoilRoot>
+      </body>
     </html>
   );
 }
