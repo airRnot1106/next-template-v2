@@ -1,3 +1,5 @@
+'use client';
+
 import { RecoilRoot } from 'recoil';
 
 import '@/app/globals.css';
