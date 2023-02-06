@@ -40,7 +40,11 @@
     "classname",
     "daisyui",
     "nonconstructor",
-    "Parens",
+    "parens",
     "tailwindcss"
-  ]
+  ],
+
+  // TypeScriptの設定
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true
 }
