@@ -29,7 +29,6 @@ module.exports = {
     'no-self-compare': 'error',
     'no-template-curly-in-string': 'error',
     'no-unreachable-loop': 'error',
-    'class-methods-use-this': 'error',
     'eqeqeq': 'error',
     'no-console': 'warn',
     'no-eval': 'error',
@@ -128,6 +127,33 @@ module.exports = {
       'error',
       {
         patterns: ['./*', '../*', '~/*', '~~/*'],
+      },
+    ],
+    'import/no-restricted-paths': [
+      'error',
+      {
+        zones: [
+          {
+            from: [
+              './src/components/page',
+              './src/components/domain',
+              './src/components/case',
+            ],
+            target: './src/components/base',
+          },
+          {
+            from: ['./src/components/page', './src/components/domain'],
+            target: './src/components/case',
+          },
+          {
+            from: ['./src/components/page'],
+            target: './src/components/domain',
+          },
+          {
+            from: ['./src/stores'],
+            target: './src/components/base',
+          },
+        ],
       },
     ],
     /* tailwindcss */

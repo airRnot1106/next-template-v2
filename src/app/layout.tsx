@@ -3,6 +3,7 @@
 import { RecoilRoot } from 'recoil';
 
 import '@/app/globals.css';
+import { DebugObserver } from '@/components/functional/DebugObserver';
 
 export default function RootLayout({
   children,
@@ -17,7 +18,10 @@ export default function RootLayout({
       */}
       <head />
       <body>
-        <RecoilRoot>{children}</RecoilRoot>
+        <RecoilRoot>
+          <DebugObserver />
+          {children}
+        </RecoilRoot>
       </body>
     </html>
   );
