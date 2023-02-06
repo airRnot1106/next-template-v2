@@ -129,6 +129,33 @@ module.exports = {
         patterns: ['./*', '../*', '~/*', '~~/*'],
       },
     ],
+    'import/no-restricted-paths': [
+      'error',
+      {
+        zones: [
+          {
+            from: [
+              './src/components/page',
+              './src/components/domain',
+              './src/components/case',
+            ],
+            target: './src/components/base',
+          },
+          {
+            from: ['./src/components/page', './src/components/domain'],
+            target: './src/components/case',
+          },
+          {
+            from: ['./src/components/page'],
+            target: './src/components/domain',
+          },
+          {
+            from: ['./src/stores'],
+            target: './src/components/base',
+          },
+        ],
+      },
+    ],
     /* tailwindcss */
     'tailwindcss/no-custom-classname': [
       'warn',
