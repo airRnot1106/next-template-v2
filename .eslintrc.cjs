@@ -29,7 +29,6 @@ module.exports = {
     'no-self-compare': 'error',
     'no-template-curly-in-string': 'error',
     'no-unreachable-loop': 'error',
-    'class-methods-use-this': 'error',
     'eqeqeq': 'error',
     'no-console': 'warn',
     'no-eval': 'error',
